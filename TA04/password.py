@@ -7,3 +7,4 @@ while clave != PWD and intento < 2:
     intento = intento + 1
     clave = input("Dime la clave:")
 print("Programa terminado")
+#Nuevo commit
