@@ -1,0 +1,5 @@
+<factura>
+  <cliente>edu</cliente>
+  <consumo>333</consumo>
+  <pago>105.90</pago>
+</factura>

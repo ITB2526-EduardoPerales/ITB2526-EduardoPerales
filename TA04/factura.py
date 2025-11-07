@@ -13,3 +13,13 @@ try:
     print(f"Este mes debes pagar: {pago:.2f}€")
 except:
     print("La has cagao bacalao")
+
+# Adeemas guarda con el nombre del cliente, pide el nombre del cliente por teclado y agregalo al archivo XML
+nombre_cliente = input("Ingresa el nombre del cliente:")
+with open("factura.xml", "w") as archivo:
+    archivo.write(f"<factura>\n")
+    archivo.write(f"  <cliente>{nombre_cliente}</cliente>\n")
+    archivo.write(f"  <consumo>{consumo}</consumo>\n")
+    archivo.write(f"  <pago>{pago:.2f}</pago>\n")
+    archivo.write(f"</factura>\n")
+
